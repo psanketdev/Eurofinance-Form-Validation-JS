@@ -1,0 +1,518 @@
+@charset "utf-8";
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html { overflow-y: scroll; }
+
+/* Align radios and text inputs with their label */
+
+input[type='radio'] { vertical-align: text-bottom; }
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em { font-style: italic; }
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup { top: -.7em; }
+sub { bottom: -.25em; }
+
+/* 1.2. Clear Fix
+   ========================== */
+
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after { clear: both; }
+.cf { *zoom: 1; }
+
+/*for all*/
+body {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a { 
+  display: inline-block;
+  text-decoration: none; 
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 51%; 
+  margin: 0 auto;
+}
+
+html {scroll-behavior: smooth;}
+/*=================================
+  Header styling starts here
+=================================*/
+ .container { position: relative;} 
+
+header {
+  width: 100%;
+  padding: 2.1% 0;
+  display: inline-block;
+  position: absolute;
+  z-index: 1000;
+}
+
+h1 {
+  width: 30%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: top;
+} 
+
+header form {
+  width: 69%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+}
+
+header input {
+  width: 35%;
+  padding: 7.5px 0 7.5px 3px; 
+  border: 1px solid #2b7dc5;
+  font-size: 11px;
+  outline: none;
+}
+
+header button {
+  padding: 9px 3%;
+  border:none;
+  margin-left: -6px;
+  color: #FFF;
+  background: #2b7dc5;
+  font-size: 11px;
+  text-transform: capitalize;
+  opacity: .8;
+}
+
+nav ul {
+  width: 100%;
+  padding: 1% 0;
+  margin: 0 auto;
+  display: inline-block;
+  position: relative; 
+  background-color: #2b7dc59c;
+}
+
+nav {padding-top: 6.5%;}
+nav li { display: inline-block; }
+nav li a span { text-transform: lowercase;}
+
+nav li a {
+  padding-right: 6px;
+  padding-left: 11px;
+  color: #fff;
+  font-size: 11px;
+  text-transform: capitalize;
+  letter-spacing: .6px;
+}
+
+nav li a:hover { color: #f1f1f1;}
+
+nav li:not(:first-of-type)::before{
+  content: '';
+  width: 1px;
+  height: 17px;
+  position: absolute;
+  top: 9px;
+  background-color: #00c7fa;
+  opacity: .7;
+}
+
+
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
+.banner-img {
+  width: 100%;
+  margin-bottom: 4.2%;
+  position: relative;
+  z-index: -1;
+  background-image: url('assets/images/bannerimg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-origin: border-box;
+}
+
+.banner-img h2 {
+  padding-bottom: 10px;
+  color: #fff;
+  font-weight: 200;
+  font-size: 30px;
+  text-transform: capitalize;
+  letter-spacing: .3px;
+}
+
+.banner-img h2 span { text-transform: lowercase;}
+.center { padding-top: 17.8% ;}
+
+h2 + p {
+  width: 56%;
+  padding-bottom: 15%;
+  color: #2b7dc5;
+  opacity: .7;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: .2px;
+}
+
+h2 + p span { text-transform: capitalize;}
+
+section h3 {
+  padding-bottom: 12px;
+  font-size: 22px;
+  color: #2b7dc5;
+  opacity: .7;
+}
+
+section h3 span { text-transform: capitalize;}
+
+section form label { 
+  padding-bottom: 7px;
+  display: block;
+  color: #000;
+  text-shadow: 1px 1px 3px #fff;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: capitalize;
+  letter-spacing: .3px;
+}
+
+section form label span { text-transform: lowercase;}
+
+section form input {
+  width: 31.5%;
+  padding: 5px 0 6px 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+   margin-bottom: 5px;
+  display: block;
+  font-size: 12px;
+  outline: none;
+} 
+
+input + span, select + span, .checkbox span {
+  display: block;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+  color: #c4302b;
+  font-size: 10px;
+  opacity: 0;
+}
+
+select {
+  width: 31.5%;
+  padding: 5px 0 6px 5px;
+  border: 1px solid #bdc3c7;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  display: block;
+  background-color: #369fe3;
+  color: #fff;
+  outline: none;
+}
+
+option {  text-transform: capitalize;}
+
+section p {
+  padding-bottom: 20px;
+  font-size: 11.5px;
+  line-height: 16px;
+}
+
+section p span { text-transform: capitalize;}
+
+.checkbox { 
+  width: 100%;
+  padding-bottom: 3px;
+}
+
+.check_yes {
+  width: 100%;
+  display: inline-block;
+}
+
+.check_yes input , .check_no input {
+  width: 2%;
+  margin-bottom: 1px;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.check_yes label, .check_no label { 
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+.checkbox + p a { color: #00c7fa; }
+
+section button {
+  width: 19%;
+  padding: 9px 0;
+  border: 1px solid;
+  margin-bottom: 14.5%;
+  background-color: #2b7dc5;
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: .5px;
+  text-align: center;
+  text-transform: capitalize;
+  transition: all .5s linear;
+}
+
+section button:hover {
+  color: #2b7dc5;
+  background-color: #fff;
+}
+
+.border { border: 1px solid #c4302b;
+}
+
+/*=================================
+  main styling ends here
+=================================*/
+
+/*=================================
+  footer styling starts here
+=================================*/ 
+footer {
+  width: 100%;
+  background-color: #2b7dc5;
+  position: relative;
+}
+
+.footer-top {
+  width: 100%;
+  padding-top: 35px;
+  display: inline-block;
+  position: relative;
+}
+
+.footer-logo {
+  width: 28%;
+  padding-right: 10%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-logo h4 {
+  width: 100%;
+  padding-bottom: 12px;
+  display: block;
+}
+
+.footer-logo h4::after {
+  content: '';
+  width: 30%;
+  border-bottom: 2px solid #fff;
+  position: absolute;
+  bottom: 65%;
+  left: 0;
+  opacity: .4;
+}
+
+.footer-logo span {
+  font-size: 12px;
+  color: #fff;
+}
+
+.footer-logo span :nth-child(1) {
+  text-transform: capitalize;
+    font-weight: 600;
+}
+
+.footer-eurofinance {
+  width: 23%;
+  padding-right: 13%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-icons {
+  width: 22%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+footer h5 {
+  padding-bottom: 12px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: .6px;
+}
+
+footer h5 span { text-transform: capitalize;}
+
+.footer-nav li { 
+  display: block;
+}
+
+.footer-nav li a {
+  padding-bottom: 2px;
+  font-size: 12px;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.footer-nav li a:hover { color: #f1f1f1;}
+
+.icons li a {
+  width: 15px;
+  padding: 6px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 17px;
+  text-align: center;
+}
+
+.icons li:not(:last-of-type) {margin-right: 8px;}
+
+.fa-linkedin { color: #0e76a8}
+.fa-twitter { color: #00acee}
+.fa-facebook {color: #3b5998;}
+.fa-caret-right { color: #c4302b;}
+
+.footer-bottom {
+  width: 100%;
+  padding: 6px 0;
+  margin-top: 3.7%;
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  background-color: #0f3364;
+}
+
+.footer-bottom ul {
+  width: 76%;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.footer-bottom li {display: inline-block;}
+
+.footer-bottom li a {
+  padding-right: 1px;
+  padding-left: 4px;
+  color: #fff;
+  font-size: 10px;
+  transition: .5s linear;
+}
+
+.footer-bottom li a:hover {color: #f1f1f1;}
+
+.footer-bottom p {
+  width: 23%;
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 10px;
+}
+
+.footer-bottom li:not(:first-of-type)::before{
+  content: '';
+  width: 1px;
+  height: 12px;
+  position: absolute;
+  top: 11px;
+  background-color: #fff;
+}
+
+.back-to-top {
+  padding: 8px 10px;
+  border-radius: 50%;
+  background-color: #0f3364;
+  position: absolute;
+  right: 1%;
+  bottom: 12%
+}
+
+.back-to-top a {
+  color: #3b5998;
+  font-size: 20px;
+}
+
+ /*=================================
+  footer styling ends here
+=================================*/ 
+
+/*media query starts*/
+/*media query for 995px starts here*/
+@media only screen and (max-width: 995px) {
+
+
+
+}  
